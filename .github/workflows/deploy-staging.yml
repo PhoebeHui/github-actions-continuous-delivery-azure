@@ -5,14 +5,14 @@ on:
     types: [labeled]
 
 env:
-  DOCKER_IMAGE_NAME: PhoebeHui-azure-ttt
+  DOCKER_IMAGE_NAME: GitHubMyWebApp
   IMAGE_REGISTRY_URL: docker.pkg.github.com
   #################################################
   ### USER PROVIDED VALUES ARE REQUIRED BELOW   ###
   #################################################
   #################################################
   ### REPLACE USERNAME WITH GH USERNAME         ###
-  AZURE_WEBAPP_NAME: PhoebeHui-ttt-app
+  AZURE_WEBAPP_NAME: GitHubMyWebApp
   #################################################
   
 jobs:
