@@ -14,11 +14,13 @@ env:
   ### REPLACE USERNAME WITH GH USERNAME         ###
   AZURE_WEBAPP_NAME: GitHubMyWebApp
   #################################################
-  
+
 jobs:
   build:
-    runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'stage')
+
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
